@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+}
+
+body {
+    margin: 5rem 0 0 3rem;
+}
+
+header {
+    margin-bottom: 9.2rem;
+}
+
+header img {
+    animation: appear-logo 3s;
+}
+
+h1 {
+    font-family: 'Work Sans';
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+h2 {
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+h2,
+p,
+.form,
+a {
+    font-family: 'League Spartan';
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+}
+
+p {
+    font-weight: 400;
+    margin-bottom: 5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+label {
+    color: var(--form-color);
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    margin-bottom: 5rem;
+}
+
+.line {
+    width: 0.5rem;
+    height: 4.8rem;
+    left: 3.6rem;
+    top: 42.4rem;
+
+    background: var(--title-color);
+
+    border: none;
+}
+
+#email {
+    width: 79rem;
+    height: 4.8rem;
+
+    border: none;
+
+    font-family: 'League Spartan';
+    font-size: 2rem;
+    font-weight: 700;
+    color: #696868;
+
+    padding-left: 1.5rem;
+
+    outline: 0;
+}
+
+#button {
+    height: 4.8rem;
+    width: 4.8rem;
+    background-color: transparent;
+    border: none;
+    color: transparent;
+}
+
+#button:hover {
+    border: 3px solid var(--title-color);
+}
+
+form img {
+    position: relative;
+    right: 4.8rem;
+    z-index: -1;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    color: var(--bg-button-color);
+
+    text-decoration: none;
+
+    width: 18rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body::before {
+    content: '';
+    width: 73rem    ;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: var(--body-bg-color);
+}
+
+.image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -2;
+}
+
+.image img {
+    max-height: 100vh;
+}
+
+@keyframes appear-logo {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 100;
+        transform: translateY(0);
+    }
+}
+
+
